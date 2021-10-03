@@ -18,12 +18,33 @@ body {
   max-width: 48em;
 }
 
+div {
+  margin: 0 1rem;
+}
+
+.bg-colour {
+  background-color: #259f95;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
 img {
   display: block;
   width: 100%;
+  border: 1px solid #259f95;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 header {
+  background-color: #1e7c74;
   background-image: url("../images/anchors.svg");
   color: #fff;
   font-size: 1.125rem;
@@ -40,10 +61,6 @@ header p {
 
 .by {
   font-style: italic;
-}
-
-article div {
-  padding: 1rem;
 }
 
 article header {
@@ -70,6 +87,10 @@ h2 {
   font-size: 1.75rem;
 }
 
+nav {
+  margin-right: 1rem;
+}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -94,6 +115,7 @@ nav a {
 nav a:hover,
 nav a:focus {
   background-color: #1e7c74;
+  outline: 2px solid #000;
 }
 
 .icon {
@@ -119,12 +141,15 @@ article p {
   text-indent: 1.3em;
 }
 
+.italic {
+  color: #1e7c74;
+}
+
 article div :first-child {
   text-indent: 0;
 }
 
 article div :first-child::first-line {
-  color: #1e7c74;
   font-style: italic;
 }
 
@@ -156,5 +181,6 @@ footer {
   justify-content: center;
   padding: 1rem;
   background-image: url("../images/anchors.svg");
+  background-color: #1e7c74;
   color: #fff;
 }
